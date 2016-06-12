@@ -22,6 +22,10 @@ mongoose.connect('mongodb://IndigoZone:telegraph5@ds019481.mlab.com:19481/heroku
 //connects app and port
 app.listen(port);
 
+// app.get('/', function(req, res){
+//   res.render('index')
+// })
+
 //handles register
 app.post('/api/register', function(req,res){
   db.create({
@@ -47,6 +51,11 @@ app.post('/api/login', function(req,res){
     }
   });
 
+});
+
+//wild card
+app.get('*/', function(req,res){
+  res.redirect('/')
 });
 
 //prints sucess when the server is running 
