@@ -1,3 +1,8 @@
+@use postcss-discard-comments(removeAll: true);
+h1/* heading */{
+    margin: 0 auto
+}
+
 /*********** Homeview + Header ***************/
 body{
   background: #F5F9FA;
@@ -234,3 +239,4 @@ p.footer-brand{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+

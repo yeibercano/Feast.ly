@@ -3,7 +3,7 @@ angular.module ('feastly.home', [])
 .controller('homeViewCtrl', function($scope, $http, $location, Recipe) {
 
   $scope.data = '';
-  $scope.featured = '';
+  // $scope.featured = '';
   $scope.query = '';
   $scope.showRecipe = '';
   $scope.showThisOne;
