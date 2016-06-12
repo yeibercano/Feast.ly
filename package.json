@@ -19,10 +19,12 @@
   "homepage": "https://github.com/IndigoZone/Feast.ly.git#readme",
   "dependencies": {
     "angular": "^1.5.5",
-    "mongoose": "^4.4.13",
-    "express": "^4.13.4",
-    "body-parser": "^1.15.0",
     "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.13",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-use": "^2.1.0",
     "q": "^1.4.1"
   }
 }
