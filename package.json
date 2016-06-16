@@ -4,7 +4,7 @@
   "description": "Feast.ly is a recipe search app that makes it easy to discover new cuisine.",
   "main": "server.js",
   "scripts": {
-    "start": "server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
