@@ -3,6 +3,12 @@ var express = require('express'),
   bodyParser = require('body-parser'),
   mongoose = require('mongoose');
 
+var postcss = require('postcss'),
+      syntax = require ('postcss-scss'),
+      stripInlineComments = require ('postcss-strip-inline-comments'),
+      fs = require('fs');
+
+
 //require database
 var db = require('./DB/db.js');
 
@@ -12,6 +18,11 @@ var app = express();
 //creates default port
 var port = process.env.PORT || 4444;
 
+var css = fs.readFileSync('./app/assets/Styles/styles.css', 'utf8');
+
+postcss([stripInlineComments]).process(css, { parser: syntax }).then( result => {
+    console.log('hello');
+});
 //middleware
 app.use(express.static(__dirname + '/app/'));
 app.use(bodyParser.json());
