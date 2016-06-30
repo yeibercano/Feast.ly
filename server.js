@@ -38,7 +38,7 @@ app.listen(port);
 // })
 
 //handles register
-app.post('/api/register', function(req,res){
+app.post('https://morning-lake-17329.herokuapp.com/api/register', function(req,res){
   db.create({
     username: req.body.username,
     password: req.body.password
@@ -49,7 +49,7 @@ app.post('/api/register', function(req,res){
 });
 
 //handles login
-app.post('/api/login', function(req,res){
+app.post('https://morning-lake-17329.herokuapp.com/api/login', function(req,res){
   db.findOne({username:req.body.username}, function(err, user){
     if (err){
       res.send(err);
