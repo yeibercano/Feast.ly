@@ -21,7 +21,7 @@ angular.module ('feastly.landing', [])
     Auth.register($scope.username, $scope.password)
     .then(function(){
       console.log("Register Successful");
-      $location.path('https://morning-lake-17329.herokuapp.com/login');
+      $location.path('/login');
     });
   };
 });
