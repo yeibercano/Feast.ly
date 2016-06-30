@@ -67,7 +67,7 @@ app.post('/api/login', function(req,res){
 //wild card
 app.get('*/', function(req,res){
   res.redirect('/')
-})
+});
 
 //prints sucess when the server is running 
 console.log('Server now listening on port: ', port);
